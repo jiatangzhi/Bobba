@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>Bubble Tea 🧋</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Boba is Happiness 😍</h1>
+      <h2>Especially Salted Egg Yolk Milk Tea with Cheese Foam</h2>
+      <br />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/079/318/original/Cold-Bubble-Tea--PNG.png?1682717662"
+        alt="Milk Tea"
+      />
+      <br />
+      <p>
+        <span>
+          Bubble tea, pearl milk tea, bubble milk tea, tapioca milk tea, boba
+          tea, or boba</span
+        >
+        is a tea-based drink accompanied by chewy
+        <span>tapioca balls("boba" or "pearls") </span> , but it can be made
+        with other toppings as well, such as
+        <span>grass jelly, aloe vera, red bean, or popping boba</span>. It has
+        many varieties and flavors, but the two most popular varieties are pearl
+        black milk tea and pearl green milk tea ("pearl" signifies the tapioca
+        balls at the bottom).
+      </p>
+
+      <a
+        href="https://en.wikipedia.org/wiki/Bubble_tea"
+        target="_blank"
+        class="learn-more"
+      >
+        Learn more on Wikipedia
+      </a>
+
+      <button class="order-button">🛒 Order Bubble Tea</button>
+      <hr />
+      <footer>
+        Coded by 👩🏻‍💻
+        <a href="http://www.jxtangzhi.com/" target="_blank" class="me">
+          <strong>Jia Tang Zhi</strong>
+        </a>
+        with HTML, CSS and JavaScript
+      </footer>
+    </div>
+  </body>
+  <script>
+    function order() {
+      let name = prompt("What is your name?");
+      let email = prompt("What is your email address?");
+      let emoji = prompt("What is your favorite emoji?");
+
+      if (name.length > 0 && email.length > 0) {
+        alert("Thank you " + name + "! We'll be in touch by email! " + emoji);
+      } else {
+        alert(
+          "Oh I am sorry, try again. Meanwhile, you can subscribe to our newsletter for more information & discounts." +
+            emoji
+        );
+      }
+    }
+
+    let orderButton = document.querySelector(".order-button");
+    orderButton.addEventListener("click", order);
+  </script>
+</html>
