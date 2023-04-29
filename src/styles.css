@@ -1,3 +1,8 @@
+body {
+    margin: 50px 10px;
+    background: #FFFAFA;
+}
+
 h1 {
     text-align: center;
     color: #a393eb;
@@ -63,19 +68,20 @@ button:hover {
     rgb(255, 228, 254) 5.3%,
     rgb(188, 132, 173) 94.7%
     );
-    max-width: 800px;
+    max-width: 550px;
     margin: 0 auto;
     padding: 25px 50px;
+    border-radius: 10px;
 }
 
-.learn-more {
+.read {
     color: #424874;
     margin: 0px 50px;
     text-decoration: none;
     font-size: 13px;
 }
 
-.learn-more:hover {
+.read:hover {
     text-decoration: underline;
 }
 
@@ -85,6 +91,7 @@ footer {
     font-size: 12px;
     background-color: rgb(253, 244, 255);
     padding: 20px;
+    border-radius: 4px 16px;
 }
 
 .me {
